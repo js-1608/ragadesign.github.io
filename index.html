@@ -53,16 +53,48 @@
         .client:last-child {
             border-right: none;
         }
+		html, body {
+    height: 100%;
+    font-family: Arial, sans-serif;
+}
+
+.background-image {
+    background-image: url('./images2/image-014.jpg'); /* Replace with your image path */
+    background-size: cover;
+    background-position: center;
+    height: 100%;
+    display: flex;
+    justify-content: flex-end;
+    /* align-items: center; */
+    padding: 0px 0px;
+}
+
+.text-container {
+    /* background: rgba(182, 177, 177, 0.295);  */
+    padding: 30px;
+    max-width: 400px; /* Adjust the width as needed */
+    border-radius: 10px;
+	height: fit-content;
+	/* margin-top: 4%; */
+}
+
+@media screen and (max-width: 600px) {
+	.background-image {
+		height: min-content;
+	  }
+}
+
+
     </style>
 	</head>
 
-	<body>
+	<body >
 
 		<!-- Start Header/Navigation -->
 		<nav class="custom-navbar navbar navbar navbar-expand-md navbar-dark bg-dark" arial-label="Furni navigation bar">
 
 			<div class="container">
-				<a class="navbar-brand" href="index.html">Furni<span>.</span></a>
+				<a class="navbar-brand" href="index.html" style="font-size: 20px;">RAGA DESIGNS</a>
 
 				<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsFurni" aria-controls="navbarsFurni" aria-expanded="false" aria-label="Toggle navigation">
 					<span class="navbar-toggler-icon"></span>
@@ -90,7 +122,7 @@
 		<!-- End Header/Navigation -->
 
 		<!-- Start Hero Section -->
-			<div class="hero">
+			<!-- <div class="hero">
 				<div class="container">
 					<div class="row justify-content-between">
 						<div class="col-lg-5">
@@ -108,6 +140,20 @@
 									</div>	
 								</div>	
 							</div>
+						</div>
+					</div>
+				</div>
+			</div> -->
+			<div class="background-image">
+				<div class="text-container">
+					<h1 style="color:#ffffff; font-size: xx-large;"><strong>Raga Design Studio</strong></h1>
+					<p style="color: #fff;">This is a container where you can put any text.</p>
+					<div class="col-lg-5">
+						<div class="intro-excerpt" style="display: flex">
+							<!-- <h1> Raga <span clsas="d-block">Design Studio</span></h1> -->
+							<!-- <p class="mb-4">Donec vitae odio quis nisl dapibus malesuada. Nullam ac aliquet velit. Aliquam vulputate velit imperdiet dolor tempor tristique.</p> -->
+							<p><a href="" class="btn btn-secondary " style="width: max-content; background-color: #3b5d50 ;color: #fff; border: none;">Contact us</a></p>						&nbsp;&nbsp;<p><a href="" class="btn " style="color: #3b5d50; background-color: #ffffff;  border:none;">Explore</a></p>
+
 						</div>
 					</div>
 				</div>
@@ -415,14 +461,14 @@
 		<!-- End Testimonial Slider -->
 
 		<!-- Start Blog Section -->
-		<div class="blog-section">
+		<div class="blog-section ">
 			<div class="container">
 				<div class="row mb-5">
 					<div class="col-md-6">
-						<h2 class="section-title">Recent Blog</h2>
+						<h2 class="section-title">Recent Product</h2>
 					</div>
 					<div class="col-md-6 text-start text-md-end">
-						<a href="#" class="more">View All Posts</a>
+						<a href="#" class="more">View All Products</a>
 					</div>
 				</div>
 
@@ -430,11 +476,11 @@
 
 					<div class="col-12 col-sm-6 col-md-4 mb-4 mb-md-0">
 						<div class="post-entry">
-							<a href="#" class="post-thumbnail"><img src="images/post-1.jpg" alt="Image" class="img-fluid"></a>
+							<a href="#" class="post-thumbnail"><img src="./images2/recent products/image-011.jpg" alt="Image" class="img-fluid"></a>
 							<div class="post-content-entry">
 								<h3><a href="#">First Time Home Owner Ideas</a></h3>
 								<div class="meta">
-									<span>by <a href="#">Kristin Watson</a></span> <span>on <a href="#">Dec 19, 2021</a></span>
+									<p>description text will come here Lorem ipsum dolor sit amet consectetur, adipisicing elit. Beatae ullam, sapiente fugiat doloremque aliquid minima nam vel quam dolorem dolorum hic a eaque magnam sunt, eos ad est nihil? Aliquid.</p>
 								</div>
 							</div>
 						</div>
@@ -442,11 +488,11 @@
 
 					<div class="col-12 col-sm-6 col-md-4 mb-4 mb-md-0">
 						<div class="post-entry">
-							<a href="#" class="post-thumbnail"><img src="images/post-2.jpg" alt="Image" class="img-fluid"></a>
+							<a href="#" class="post-thumbnail"><img src="./images2/recent products/image-016.jpg" alt="Image" class="img-fluid"></a>
 							<div class="post-content-entry">
 								<h3><a href="#">How To Keep Your Furniture Clean</a></h3>
 								<div class="meta">
-									<span>by <a href="#">Robert Fox</a></span> <span>on <a href="#">Dec 15, 2021</a></span>
+									<p>description text will come here Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur facere, odio ducimus quis iusto ullam asperiores error excepturi assumenda dolores ad animi nihil sed, labore maiores modi autem optio culpa.</p>
 								</div>
 							</div>
 						</div>
@@ -454,11 +500,11 @@
 
 					<div class="col-12 col-sm-6 col-md-4 mb-4 mb-md-0">
 						<div class="post-entry">
-							<a href="#" class="post-thumbnail"><img src="images/post-3.jpg" alt="Image" class="img-fluid"></a>
+							<a href="#" class="post-thumbnail"><img src="./images2/recent products/image-062.jpg" alt="Image" class="img-fluid"></a>
 							<div class="post-content-entry">
-								<h3><a href="#">Small Space Furniture Apartment Ideas</a></h3>
+								<h3><a href="#">Small Space Furniture Apartment Ideas </a></h3>
 								<div class="meta">
-									<span>by <a href="#">Kristin Watson</a></span> <span>on <a href="#">Dec 12, 2021</a></span>
+									<p>description text will come here Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat dignissimos a unde aut, quas nobis atque quasi aperiam ab consequuntur quis soluta tempora blanditiis, officiis similique quo illo asperiores perspiciatis.</p>
 								</div>
 							</div>
 						</div>
@@ -562,7 +608,7 @@
 
 				<div class="row g-5 mb-5">
 					<div class="col-lg-4">
-						<div class="mb-4 footer-logo-wrap"><a href="#" class="footer-logo">Furni<span>.</span></a></div>
+						<div class="mb-4 footer-logo-wrap"><a href="#" class="footer-logo">Raga Design<span>.</span></a></div>
 						<p class="mb-4">Donec facilisis quam ut purus rutrum lobortis. Donec vitae odio quis nisl dapibus malesuada. Nullam ac aliquet velit. Aliquam vulputate velit imperdiet dolor tempor tristique. Pellentesque habitant</p>
 
 						<ul class="list-unstyled custom-social">
